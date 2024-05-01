@@ -1,0 +1,221 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pp b {
+    color: #f44336;
+    font-size: 45px;
+    font-family:  Times;
+}
+.pp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: -15px;
+}
+
+/* Advertisement Slide CSS */
+.slideshow-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start the images off-screen to the right */
+    width: 100%;
+    height: 100%;
+    animation: slide 8s linear infinite; 
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .slide:nth-child(2) {
+    animation-delay: 2s; /* Delay for the second image */
+  }
+  
+  .slide:nth-child(3) {
+    animation-delay: 4s; /* Delay for the third image */
+  }
+  
+  .slide:nth-child(4) {
+    animation-delay: 6s; /* Delay for the fourth image */
+  }
+  
+  .slide:nth-child(5) {
+    animation-delay: 8s; /* Delay for the fifth image */
+  }
+  
+  @keyframes slide {
+    0% {
+      left: 100%; /* Start off-screen to the right */
+    }
+    100% {
+      left: -100%; /* Move off-screen to the left */
+    }
+  }
+  
+
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    position: absolute;
+}
+
+/* Header styles */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f44336;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+#nav {
+    margin-top: 20px;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #f44336;
+}
+
+/* Section styles */
+.menu-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-title {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(222, 151, 44, 0.525);
+    color: #1a1a1aab;
+    border: 1px solid rgba(75, 75, 75, 0.521);
+    text-align: center;
+    border-radius: 30px;
+    margin: 0% 44%;
+    padding: 10px;
+    font-size: 45px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Menu item styles */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #f6f1c8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item img {
+    border-radius: 10px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.item-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #f44336;
+}
+
+/* Footer styles */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .menu-section {
+        padding: 30px 10px;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .menu-link {
+        font-size: 18px;
+    }
+}
+
+.advertisment-burger {
+    margin: 0px 50px;
+}
+
+img{
+    margin-bottom: 20px;
+
+}
