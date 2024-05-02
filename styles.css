@@ -75,9 +75,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
-    padding : 0 7px 0 8px ;
 }
-
+.main{
+    padding : 0 7% 0 9% ;
+}
 /* Header styles */
 #header {
     background-color: #333;
